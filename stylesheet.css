@@ -5,11 +5,14 @@ body{
 .wrapper{
     display: grid;
     grid-template-areas:
-     
     "head head head head head"
     "rside cont cont cont lside"
     "rside cont cont cont lside"
     ;
+}
+
+.inner_wrapper {
+    
 }
 
 .header{
@@ -34,7 +37,21 @@ body{
 
 }
 
+.cTopVänster{
+    grid-area: imageTop;
+}
 
+.cTopHöger{
+    grid-area: textTop;
+}
+
+.cBottomVänster{
+    grid-area: textBottom;
+}
+
+.cBottomHöger {
+    grid-area: imageBottom;
+}
 
 
 .content{
@@ -43,6 +60,11 @@ body{
     
     background-color: plum;
     
+    display: grid;
+    
+    grid-template-areas: 
+    "imageTop textTop"
+    "textBottom imageBottom";
 }
 
 
