@@ -1,0 +1,55 @@
+body{
+    margin:0;
+}
+
+.wrapper{
+    border: blue solid;
+    display: grid;
+    grid-template-areas:
+     
+    "head head head head"
+    "rside cont cont lside"
+    "rside cont cont lside"
+    ;
+    
+}
+
+.header{
+    grid-area: head;
+    height: 300px;
+    border: black solid 3px;
+    
+}
+
+.rightsidebar{
+    grid-area: rside;
+    height: 100%;
+    border: red solid 3px;
+
+}
+
+.leftsidebar{
+    grid-area: lside;
+    height: 100%;
+    border: red solid 3px;
+
+}
+
+
+
+
+.content{
+    grid-area: cont;
+    height: 300px;
+    border: plum solid;
+    margin: 30px;
+}
+
+
+/*
+footer{
+    border: yellowgreen solid;
+    grid-area: foot;    
+    height: 300px;
+}
+*/
