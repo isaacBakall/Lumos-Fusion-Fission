@@ -24,7 +24,7 @@ body{
 .rightsidebar{
     grid-area: rside;
     height: 100%;
-    border: rgb(255, 0, 217) solid 3px;
+    border: rgb(0, 255, 17) solid 3px;
 
 }
 
