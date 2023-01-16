@@ -10,7 +10,6 @@ body{
     "rside cont cont cont lside"
     "rside cont cont cont lside"
     ;
-    
 }
 
 .header{
@@ -32,6 +31,7 @@ body{
     height: 500px;
     background-color: red;
 
+
 }
 
 
@@ -40,6 +40,7 @@ body{
 .content{
     grid-area: cont;
     height: 500px;
+    
     background-color: plum;
     
 }
