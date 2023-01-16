@@ -16,7 +16,7 @@ body{
 .header{
     grid-area: head;
     height: 250px;
-    background-color: black;
+    background-color: rgb(62, 61, 61);
     
 }
 
@@ -41,8 +41,6 @@ body{
     grid-area: cont;
     height: 500px;
     background-color: plum;
-    margin-left: 30px;
-    margin-right: 30px;
     
 }
 
