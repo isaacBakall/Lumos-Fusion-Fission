@@ -6,9 +6,9 @@ body{
     display: grid;
     grid-template-areas:
      
-    "head head head head"
-    "rside cont cont lside"
-    "rside cont cont lside"
+    "head head head head head"
+    "rside cont cont cont lside"
+    "rside cont cont cont lside"
     ;
     
 }
