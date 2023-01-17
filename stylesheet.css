@@ -5,14 +5,10 @@ body{
 .wrapper{
     display: grid;
     grid-template-areas:
-    "head head head head head"
-    "rside cont cont cont lside"
-    "rside cont cont cont lside"
+    "head head head head"
+    "rside cont cont lside"
+    "rside cont cont lside"
     ;
-}
-
-.inner_wrapper {
-    
 }
 
 .header{
@@ -39,18 +35,56 @@ body{
 
 .cTopVänster{
     grid-area: imageTop;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(251, 255, 0);
+    position: static;
+    border-radius: 5px;
 }
 
 .cTopHöger{
     grid-area: textTop;
+
+    width: 500px;
+    height: 75px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    
+
+    /*
+    position: absolute;
+    left: 300px;
+    bottom: 225px;
+    */
+    
+    
+    
+    background-color: rgb(255, 108, 10);
 }
 
 .cBottomVänster{
     grid-area: textBottom;
+    margin-left: 20px;
+    /* width: 500px; */
+    height: 250px;
+    background-color: rgb(210, 210, 255);
+    border-radius: 5px;
+    
 }
 
 .cBottomHöger {
     grid-area: imageBottom;
+    margin-left: 20px;
+    margin-right: 10px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    
+    height: 250px;
+    
+  
 }
 
 
