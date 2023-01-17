@@ -85,19 +85,19 @@ body{
 .cBottomVänster{
     grid-area: text2;
     background-color: rgb(210, 210, 255);
-    width: 30rem;
-    height: 16rem;
-    place-self: center right;
-    margin-right: 1rem;
+    width: 36rem;
+    height: 20rem;
+    place-self: top left;
+    margin-left: 3rem;
 }
 
 .cBottomHöger {
     grid-area: text3;
     background-color: aquamarine;
-    width: 30rem;
-    height: 16rem;
-    place-self: center left;
-    margin-left: 1rem;
+    width: 36rem;
+    height: 20rem;
+    place-self: top right;
+    margin-right: 3rem;
 }
 
 /* --------------------------- */
