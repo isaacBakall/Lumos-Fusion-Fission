@@ -1,12 +1,11 @@
 @font-face {
     font-family: "Swiss";
     src: url("/fonts/Swiss_721_Black_Extended_BT.ttf") format("truetype");
-    
-    
 }
 
 @font-face {
-
+    font-family: "Myriad";
+    src: url("/fonts/MYRIADPRO-REGULAR.woff") format("woff");
 }
 
 body{
