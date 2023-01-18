@@ -54,8 +54,8 @@ body{
 }
 
 .rubrikText {
-    color: rebeccapurple;
     text-align: center;
+    font-size: 30px;
 }
 
 .rightsidebar{
@@ -95,7 +95,8 @@ body{
     "text2  text3"
     "image2 text4"
     "image3 text5"
-    "text6 image4"
+    "text6  image4"
+    "image5 image6"
     ;
 }
 
@@ -107,7 +108,7 @@ body{
     font-family: Myriad;
 
     grid-template-areas: 
-    "image5"
+    
     "text7";
 }
 
@@ -173,33 +174,31 @@ body{
 
 .kärnkraftverkText {
     grid-area: text4;
-    background-color: rgb(255, 255, 255);
-    width: 20rem;
-    height: 20rem;
-    place-self: right;
-    margin-right: 3rem;
+    width: 50rem;
+    height: 10rem;
+    place-self: center top;
+    margin-left: -15rem;
+    margin-right: 3rem
     
 }
 
 .kärnreaktorBild {
     grid-area: image3;
     content: url("/img/hole.png");
-    height: 20rem;
     width: 20rem;
-    place-self: center top right;
+    height: 20rem;
+    place-self: left;
+    margin-left: 3rem;
     
 }
 
 .kärnreaktorText {
     grid-area: text5;
-    background-color: rgb(255, 255, 255);
     width: 50rem;
-    height: 15rem;
-    place-self: top right;
+    height: 10rem;
+    place-self: center top;
     margin-left: -15rem;
-    margin-right: 5rem;
-    margin-top: 5rem;
-    z-index: 1;
+    margin-right: 3rem
 
     
 }
@@ -207,19 +206,18 @@ body{
 /* --------------------------- */
 .liseText {
     grid-area: text6;
-    background-color: rgb(255, 255, 255);
-    width: 36rem;
-    height: 20rem;
-    place-self: top right;
+    
+    width: 30em;
+    place-self: center;
+    margin-left: 7rem;
     
 }
 
 .liseBild {
     grid-area: image4;
     content: url("/img/Lisa.png");
-    height: 20rem;
-    width: auto;
-    place-self: center top right;
+    height: 30rem;
+    place-self: center;
     
 }
 
@@ -227,7 +225,6 @@ body{
     grid-area: image5;
     content: url("/img/hammer.png");
     width: 25rem;
-    height: auto;
     place-self: center;
     
     
@@ -235,10 +232,10 @@ body{
 
 .sverigeText {
     grid-area: text7;
-    background-color: rgb(255, 255, 255);
     width: 36rem;
     height: 20rem;
-    place-self: top right;
+    place-self: center;
+    font-size: 20px;
      
     
 }
