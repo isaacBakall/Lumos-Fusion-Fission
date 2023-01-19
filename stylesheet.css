@@ -8,6 +8,41 @@
     src: url("/fonts/MYRIADPRO-REGULAR.woff") format("woff");
 }
 
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+}
+
+@media only screen and (max-device-width: 480px) {
+    
+    .wrapper{
+        display: grid;
+        grid-template-columns: 0 1fr 0;
+        grid-template-areas:
+        "head"
+        "cont"
+        "cont2"
+        ;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .leftsidebar {
+        display: none;
+    }
+
+    .rightsidebar {
+        display: none;
+    }
+}
+
+
+
 
 body{
     margin: 0;
@@ -17,7 +52,7 @@ body{
 
 .wrapper{
     display: grid;
-    grid-template-columns: 300px 1fr 300px;
+    grid-template-columns: 15% 1fr 15%;
     /* grid-template-rows: auto; */
     grid-template-areas:
     "head head head"
@@ -62,7 +97,6 @@ body{
 
 .rightsidebar{
     grid-area: rside;
-    /* height: 2000px; */
     width: auto;
     background: rgb(7,6,24);
     background: linear-gradient(0deg, rgba(7,6,24,1) 0%, rgba(22,25,62,1) 33%, rgba(18,44,67,1) 66%, rgba(82,101,118,1) 100%);
@@ -71,7 +105,6 @@ body{
 
 .leftsidebar{
     grid-area: lside;
-    /* height: 2000px; */
     width: auto;
     background: rgb(7,6,24);
     background: linear-gradient(0deg, rgba(7,6,24,1) 0%, rgba(22,25,62,1) 33%, rgba(18,44,67,1) 66%, rgba(82,101,118,1) 100%);
@@ -159,7 +192,7 @@ body{
     width: 33rem;
     height: auto;
     place-self: center right top;
-    margin-right: 3rem;
+    margin-left: 4rem;
 }
 
 /* --------------------------- */
