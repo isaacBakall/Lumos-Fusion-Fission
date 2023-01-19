@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumos hemsida</title>
-    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
 
-    <link rel="icon" type="image/x-icon" href="./icon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/x-icon" href="/icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
@@ -29,32 +29,19 @@
                     Kärnkraft är ett hållbart alternativ för världens elproduktion i framtiden. Det finns många positiva faktorer med kärnkraft och det är även det mest effektiva och det mest använda sättet att producera el på i dagens läge.
                 </p>
             </div>
-            <div class="ffContent">
-                <div class="fusionBild"></div>
-                <div class="fusionText">
-                    <div class="brödtext">
-                        <h1>
-                            Fusion
-                        </h1>
-                        <p>
-                            Fusion är när två eller flera mindre atomkärnor slås samman till en enda större och tyngre atomkärna. På grund av de mindre atomkärnornas låga bindningsenergi kan man få mer energi eller tjäna energi genom att de två kärnorna smälter samman.
-                        </p>
-                    </div>
+            <div class="wrapper2">
+                <button class="collapsible"><img src="img/FissionIcon.png" alt="Fission" height="170px" class="img1"></button>
+                <div id="content" class="fission">
+                    <h1 class="rubrikText">Fission</h1>
+                    <p class="brödtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eos atque eius optio odit necessitatibus itaque natus dolorem iste aspernatur. Quasi vitae cum numquam optio commodi quibusdam aspernatur voluptas rerum.</p>
                 </div>
-
-                <div class="fissionBild"></div>
-                <div class="fissionText">
-                    <div class="brödtext">
-                        <h1>
-                            Fission
-                        </h1>
-                        <p>
-                            Fission är processen där en tung atom med stor massa, oftast Uran (235U), sönderfaller och splittras i två eller fler delar. Detta fenomen händer när kärnan till atomen blir introducerad till fler neutroner vilket gör den instabil. Processen splittrar bara inte massan i två utan släpper också ut fler neutroner vilket skapar en kedjereaktion som gör att fler uranatomer splittras. Biljoner av dessa atomer splittras varje sekund vilket skapar extremt mycket hetta och energi som sedan används för att värma upp vattnet i en kärnreaktor.
-                        </p>
-                    </div>
-                </div>
+            <button class="collapsible"><img src="img/fusionIcon.png" alt="Fusion" height="170px" class="img2"></button>
+            <div id="content" class="fusion">
+                <h1 class="rubrikText">Fusion</h1>
+                <p class="brödtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum sunt cum quo nam omnis ullam sed obcaecati similique alias perspiciatis voluptate a cumque facere eius quisquam, praesentium aut excepturi inventore?</p>  
             </div>
         </div>
+    </div>
        
        <aside class="rightsidebar"></aside> <!--höger sidebar -->
        <aside class="leftsidebar"></aside> <!--vänster sidebar -->
@@ -86,7 +73,6 @@
 
             <!--<div class="fusionText rounded">
                 <h1 class="rubrikText"> Fusion </h1>
-
                 <p class="brödtext">
                     Fusion är när två eller flera mindre atomkärnor slås samman till en enda större och tyngre atomkärna. På grund av de mindre atomkärnornas låga bindningsenergi kan man få mer energi eller tjäna energi genom att de två kärnorna smälter samman.
                 </p>
@@ -117,7 +103,6 @@
             </div>
 
             <div class="sverigeText brödtext">
-                <div class="hammare"></div>
                 <h1 class="rubrikText">Sverige</h1>
                 <p> 
                     Sverige finns det just nu 6 aktiva kärnkraftverk. Antalet aktiva kärnreaktorer har minskat då Socialdemokraterna, Vänsterpartiet och Centerpartiet gjorde beslutet att stänga ner 2 kärnreaktorer i Barsebäck år 1999 och 2005. I 2015 och 2017 lades även 2 kärnreaktorer i Oskarshamn ner. Slutligen så stängdes de 2 senaste kärnreaktorerna av vilket var i Ringhals vid slutet av 2019 och slutet av 2020. De kärnreaktorer som finns kvar är fördelade på tre olika kärnkraftverk i Sverige. Dessa kärnkraftverk ligger i Forsmark, Oskarshamn och Ringhals. 
@@ -134,7 +119,7 @@
        </section>
     </div>
 
-    
+    <div class="foot"></div>
     <Script src="js/Collapse.js"></Script>
 </body>
 </html>

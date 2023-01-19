@@ -82,7 +82,7 @@ body{
     "logoBild "
     "rubrik "
     "underrubrik "
-    "ffContent"
+    "collapseContainer"
     ;
 }
 
@@ -121,38 +121,15 @@ body{
     padding-top: 4rem
 }
 
-.ffContent {
-    width: 80rem;
-    height: 25rem;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "fusionBild fusionText fissionBild fissionText"
-    ;
-}
 
-.fusionBild {
-    grid-area: fusionBild;
-    content: url("img/fusionicon.png");
-    height: auto;
-    width: 14rem;
-}
 
-.fusionText {
-    grid-area: fusionText;
-}
 
-.fissionBild {
-    grid-area: fissionBild;
-    content: url("img/FissionIcon.png");
-    height: auto;
-    width: 13rem;
-}
 
-.fissionText {
-    grid-area: fissionText;
-}
+
+
+
+
+
 
 .rubrikText {
     text-align: center;
@@ -183,7 +160,8 @@ body{
     "image2 text4 "
     "text5 image3 "
     "image4 text6 "
-    "text7  sverigeBild"
+    "image5 image6"
+    "text7  image7     "
     ;
 }
 
@@ -222,6 +200,7 @@ body{
     place-self: center left top;
     margin-left: 3rem;
 }
+
 .fissionText {
     grid-area: text3;
     background-color: rgb(255, 255, 255);
@@ -235,10 +214,10 @@ body{
 .kärnkraftverkBild {
     grid-area: image2;
     background-color: rgb(255, 255, 255);
-    width: 30rem;
-    height: 30rem;
-    place-self: left;
-    margin-left: 15rem;
+    width: 20rem;
+    height: 20rem;
+    place-self: left center;
+    margin-left: 8rem;
     content: url("img/kärn.png");
     
 }
@@ -248,18 +227,19 @@ body{
     width: 50rem;
     height: 10rem;
     place-self: center top;
-    margin-left: -15rem;
-    margin-right: 3rem
+    margin-left: -40rem;
+    margin-bottom: 20rem;
+    
     
 }
 
 .kärnreaktorBild {
     grid-area: image3;
     content: url("img/hole.png");
-    width: 30rem;
-    height: 30rem;
-    place-self: center;
-    margin-left: -15rem;
+    width: 20rem;
+    height: 20rem;
+    place-self: center left;
+    margin-left: -3rem;
     
 }
 
@@ -269,7 +249,8 @@ body{
     height: 10rem;
     place-self: center top;
     margin-left: 15rem;
-    margin-right: 3rem
+    margin-right: 3rem;
+    margin-bottom: 20rem;
 
     
 }
@@ -280,7 +261,7 @@ body{
     
     width: 30em;
     place-self: center;
-    margin-left: -40rem;
+    margin-left: -55rem;
     
 }
 
@@ -292,11 +273,20 @@ body{
     
 }
 
+.sverigeBild {
+    grid-area: image6;
+    content: url("img/hammer.png");
+    width: 15rem;
+    margin-left: -55rem;
+    margin-bottom: -20rem;
+}
 
 .sverigeBild2 {
-    grid-area: sverigeBild;
-    width: 25rem;
+    grid-area: image7;
     content: url("img/atom.png");
+    width: 30rem;
+    margin-left: -15rem;
+    margin-bottom: 5rem;
 }
     
 .sverigeText {
@@ -326,15 +316,34 @@ footer{
     color:white;
 }
 
+.foot{
+    position: relative;
+    width:100%;
+    height: 100px;
+    background-color: rgb(7,6,24);
+    bottom: 0;
+}
 
+.wrapper2{
+    display: grid;
+    grid-template-areas: "img1 fi img2 fu";
+    margin-left: 500px;
+    margin-right: 500px;
+}
 
+.img1{grid-area: img1;}
+
+.img2{grid-area: img2;}
+
+.fission{grid-area: fi;}
+
+.fusion{grid-area: fu}
 
 
 /*/////////////////*/
 /*Collapsible menus*/
 /*/////////////////*/
 .collapsible {
-    float: left;
     background-color: rgba(255, 255, 255, 0);
     place-self: center;
     cursor: pointer;
@@ -345,7 +354,6 @@ footer{
   }
   
   #content {
-    float: left;
     width: 20rem;
     padding: 0 18px;
     max-height: 0;
@@ -356,3 +364,5 @@ footer{
     border-bottom-right-radius: 10px;
     margin-bottom: 10px;
   }
+
+
