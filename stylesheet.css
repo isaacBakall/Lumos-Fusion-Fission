@@ -82,7 +82,7 @@ body{
     "logoBild "
     "rubrik "
     "underrubrik "
-    "collapseContainer"
+    "ffContent"
     ;
 }
 
@@ -121,15 +121,38 @@ body{
     padding-top: 4rem
 }
 
+.ffContent {
+    width: 80rem;
+    height: 25rem;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "fusionBild fusionText fissionBild fissionText"
+    ;
+}
 
+.fusionBild {
+    grid-area: fusionBild;
+    content: url("img/fusionicon.png");
+    height: auto;
+    width: 14rem;
+}
 
+.fusionText {
+    grid-area: fusionText;
+}
 
+.fissionBild {
+    grid-area: fissionBild;
+    content: url("img/FissionIcon.png");
+    height: auto;
+    width: 13rem;
+}
 
-
-
-
-
-
+.fissionText {
+    grid-area: fissionText;
+}
 
 .rubrikText {
     text-align: center;
@@ -160,8 +183,7 @@ body{
     "image2 text4 "
     "text5 image3 "
     "image4 text6 "
-    "image5 image6"
-    "text7  .     "
+    "text7  sverigeBild"
     ;
 }
 
@@ -200,7 +222,6 @@ body{
     place-self: center left top;
     margin-left: 3rem;
 }
-
 .fissionText {
     grid-area: text3;
     background-color: rgb(255, 255, 255);
@@ -214,8 +235,8 @@ body{
 .kärnkraftverkBild {
     grid-area: image2;
     background-color: rgb(255, 255, 255);
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     place-self: left;
     margin-left: 15rem;
     content: url("img/kärn.png");
@@ -235,9 +256,9 @@ body{
 .kärnreaktorBild {
     grid-area: image3;
     content: url("img/hole.png");
-    width: 20rem;
-    height: 20rem;
-    place-self: center right;
+    width: 30rem;
+    height: 30rem;
+    place-self: center;
     margin-left: -15rem;
     
 }
@@ -271,17 +292,11 @@ body{
     
 }
 
-.sverigeBild {
-    grid-area: image6;
-    content: url("img/hammer.png");
-    width: 10rem;
-    place-self: center left;
-    margin-left: -65rem;
-}
 
 .sverigeBild2 {
     grid-area: sverigeBild;
-    content: url("img/at");
+    width: 25rem;
+    content: url("img/atom.png");
 }
     
 .sverigeText {
@@ -311,13 +326,6 @@ footer{
     color:white;
 }
 
-.foot{
-    position: relative;
-    width:100%;
-    height: 100px;
-    background-color: rgb(7,6,24);
-    bottom: 0;
-}
 
 
 
@@ -348,4 +356,3 @@ footer{
     border-bottom-right-radius: 10px;
     margin-bottom: 10px;
   }
-
