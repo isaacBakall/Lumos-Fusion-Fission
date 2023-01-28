@@ -8,33 +8,7 @@
     src: url("fonts/MYRIADPRO-REGULAR.woff") format("woff");
 }
 
-@media only screen and (max-width: 1200px){
-    /*Tablets [601px -> 1200px]*/
-}
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-}
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
-}
 
-/*
-@media (min-device-width: 480px) {
-    
-    .wrapper{
-        display: grid;
-        grid-template-columns: 0 1fr 0;
-        grid-template-areas:
-        "head"
-        "cont"
-        "cont2"
-        ;
-        box-sizing: border-box;
-        background-size: cover;
-        width: 100%;
-    }
-}
-*/
 
 
 
@@ -67,7 +41,6 @@ body{
     height: auto;
     background-color: rgb(62, 61, 61);
     background-image: url("./img/solned.png");
-    width: 100%;
     height: 100vh;
     padding-bottom: 40rem;
 
@@ -89,11 +62,9 @@ body{
 .header .title {
     font-family: Swiss; 
     color: #FCF9EB;
-    width: 100%;
-    height: 100%;
     text-align: center;
     justify-content: center;
-    font-size: 100px;
+    font-size: 120px;
     text-shadow: 0 0.5rem 1rem black;
 }
 
@@ -101,9 +72,13 @@ body{
     grid-area: logoBild;
     content: url("./img/lumos.png");
     width: auto;
-    height: 10rem;
+    height: 15rem;
     margin-left: 2rem;
     margin-top: 2rem;
+    
+}
+.logoTop:hover{
+    opacity: 0.5;
 }
 
 .title{
@@ -116,7 +91,7 @@ body{
     height: 15rem;
     width: 30rem;
     justify-self: center;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: -10rem;
     padding-top: 4rem
 }
@@ -161,21 +136,11 @@ body{
     "text5 image3 "
     "image4 text6 "
     "image5 image6"
-    "text7  image7     "
+    "text7  image7"
     ;
 }
 
-.content2{
-    grid-area:cont2;
-    display: grid;
-    background-color: rgba(255, 255, 255, 0.8);
 
-    font-family: Myriad;
-
-    grid-template-areas: 
-    
-    "text7";
-}
 
 .rounded {
     border-radius: 40px;
@@ -192,23 +157,6 @@ body{
 }
 
     
-/*.fusionText{
-    grid-area: text2;
-    background-color: rgb(255, 255, 255);
-    width: 33rem;
-    height: auto;
-    place-self: center left top;
-    margin-left: 3rem;
-}
-
-.fissionText {
-    grid-area: text3;
-    background-color: rgb(255, 255, 255);
-    width: 33rem;
-    height: auto;
-    place-self: center right top;
-    margin-left: 4rem;
-}*/
 
 /* --------------------------- */
 .kärnkraftverkBild {
@@ -337,17 +285,34 @@ body{
 .wrapper2{
     display: grid;
     grid-template-areas: "fi img1 img2 fu";
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-right: 50%;
+    margin-left: 20%;
+    margin-top: 2rem;
+    
 }
 
-.img1{grid-area: img1;}
+.img1{
+    grid-area: img1;
+    width: 10rem;
+    height: auto;
+}
+.img1:hover {opacity: 0.5; background-color: lightblue;}
 
-.img2{grid-area: img2;}
+.img2{
+    grid-area: img2;
+    width: 10rem;
+    height: auto;}
+.img2:hover {opacity: 0.5; background-color: lightblue;}
 
-.fission{grid-area: fi;}
+.fission{
+    grid-area: fi;
+    font-size: 1.125rem;
+}
 
-.fusion{grid-area: fu}
+.fusion{
+    grid-area: fu;
+    font-size: 1.125rem;
+}
 
 
 /*/////////////////*/
@@ -376,3 +341,84 @@ body{
   }
 
 
+
+  
+/*@media (-webkit-device-pixel-ratio: 1.25) {
+    :root {
+    zoom: 0.8;
+    }
+}*/
+@media only screen and (max-width: 1536px){
+    /*1.25*/
+    .header .title {
+    font-family: Swiss; 
+    color: white;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    /*margin-right: 50%;
+    margin-left: 25%;*/
+    font-size: 100px;
+    text-shadow: 0 0.5rem 1rem black;
+    }
+
+    .underRubrik{
+    margin-left: 50%;
+    margin-right: 50%;
+    }
+    
+    .wrapper2{
+        margin-right: 50%;
+        margin-left: 15%;
+        margin-bottom: 5%;
+    }
+    .liseBild{
+        margin-right: 50%;
+        margin-left: 15%;
+    }
+
+    .kärnkraftverkBild{
+        margin-right: 50%;
+        margin-left: 15%;
+    }
+
+    .kärnreaktorBild{
+        margin-bottom: 30%;
+       
+    }
+
+    .content{
+        padding-top: 50rem;
+    }
+
+    .img1{
+        width: 7rem;
+    }
+    .img2{
+        width: 7rem;
+    }
+    .fission{
+        font-size: 0.8rem;
+    }
+    .fusion{
+        font-size: 0.8rem;
+    }
+
+}
+@media only screen and (max-width: 1280px){
+	/*1.5*/
+    .header .title {
+        font-family: Swiss; 
+        color: blue;
+        
+    }
+}
+@media only screen and (max-width: 1098px){
+    .header .title {
+        font-family: Swiss; 
+        color: orange;
+        
+    }
+	/*1.75*/
+}
